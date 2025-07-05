@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int numbers[100], n, i;
+
+    // Input total number of elements
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    // Input the numbers
+    printf("Enter the numbers:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &numbers[i]);
+    }
+
+    // Check each number
+    printf("Odd and Even classification:\n");
+    for(i = 0; i < n; i++) {
+        if(numbers[i] % 2 == 0)
+            printf("%d is Even\n", numbers[i]);
+        else
+            printf("%d is Odd\n", numbers[i]);
+    }
+
+    return 0;
+}
